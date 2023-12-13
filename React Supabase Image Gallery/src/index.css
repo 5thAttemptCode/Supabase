@@ -11,12 +11,14 @@ body{
   overflow: hidden;
 }
 
-.gallery-container{
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+h1{
+  position: fixed;
+  bottom: 15px;
+  left: 0px;
+  line-height: 0.6;
+  font-size: 400px;
+  font-weight: 500;
+  letter-spacing: -10px;
 }
 
 img{
@@ -28,13 +30,12 @@ img{
   filter: grayscale(50%);
 }
 
-.image-component{
-  transition: all 0.5s;
-}
-
-.image-component:hover{
-  scale: 1.1;
-  margin-inline: 40px;
+.gallery-container{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .gallery-container:has(.image-component:hover) .image-component:not(:hover){
@@ -48,12 +49,11 @@ img{
   margin-inline: 10px;
 }
 
-h1{
-  position: fixed;
-  bottom: 15px;
-  left: 0px;
-  line-height: 0.6;
-  font-size: 400px;
-  font-weight: 500;
-  letter-spacing: -10px;
+.image-component{
+  transition: all 0.5s;
+}
+
+.image-component:hover{
+  scale: 1.1;
+  margin-inline: 40px;
 }

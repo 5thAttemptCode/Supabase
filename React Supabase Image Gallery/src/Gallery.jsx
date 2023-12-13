@@ -21,7 +21,6 @@ export default function Gallery() {
           if(error) {
             setFetchError("Error fetching images")
             setImages([])
-            console.log(error);
           }
           if(data){
             setImages(data)
