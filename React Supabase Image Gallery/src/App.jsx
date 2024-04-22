@@ -1,13 +1,17 @@
 import React from 'react'
-import Gallery from './Gallery';
+import Gallery from './pages/gallery'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import ImagePage from './pages/imagePage'
 
 
 export default function App() {
 
   return (
-    <div className='gallery-container'>
-      <Gallery />
-      <h1>CONCRETE</h1>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={ <Gallery />} />
+        <Route path='/:id' element={<ImagePage />} />
+      </Routes>
+    </BrowserRouter>
   )
 }

@@ -1,59 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Bebas Neue', sans-serif;
+  text-decoration: none;
+  color: #141414;
 }
 
 body{
   overflow: hidden;
 }
 
-h1{
-  position: fixed;
-  bottom: 15px;
-  left: 0px;
-  line-height: 0.6;
-  font-size: 400px;
-  font-weight: 500;
-  letter-spacing: -10px;
-}
 
-img{
-  min-height: 200px;
-  max-height: 250px;
-  min-width: 200px;
-  max-width: 300px;
-  object-fit: cover;
-  filter: grayscale(50%);
-}
 
-.gallery-container{
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
 
-.gallery-container:has(.image-component:hover) .image-component:not(:hover){
-  filter: blur(5px) grayscale(100%);
-  opacity: 0.8;
-}
 
-.gallery{
-  display: flex;
-  gap: 30px;
-  margin-inline: 10px;
-}
 
-.image-component{
-  transition: all 0.5s;
-}
 
-.image-component:hover{
-  scale: 1.1;
-  margin-inline: 40px;
-}
+
+
